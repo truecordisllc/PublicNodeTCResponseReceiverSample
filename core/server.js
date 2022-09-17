@@ -74,7 +74,7 @@ app.post("/api/responsejson", function (req, res) {
         settings.gkClientUserID = name.kClientUserID; //extract the querystring param and assign to a var in settings
 
         // Compare with your own valid guid
-        if(settings.gkClientUserID  !== "24F06D3A-C510-4719-AD2A-3DDADFE43FBD") {  // does this match the user json4289test for clientid=3747?
+        if(settings.gkClientUserID  !== "2276D4D1-52B7-4F38-8E89-FCBD7A67F57A") {  // does this match the user json4289test for clientid=3747?
             // If not, set to null
             settings.gkClientUserID = null;
         }
@@ -123,11 +123,12 @@ app.post("/api/responsejson", function (req, res) {
     // Note: the following lines upto END BACKEND would probably be better on the backend.  Then return a 
     // START BACKEND
 
+    // you shoud have received the following info frm TrueCordis... if not, please ask for it
     // here is what the client should have stored in a table or container or in some config file:
     // This should never be stored in this app (unless hidden in a "secret" or environment var)
-    const cVendorID = "truecordis";
-    const cUserID = "json4289test";
-    const cPassword = "json4289nodtst";
+    const cVendorID = "xxxxxxxxxx";
+    const cUserID = "xxxxxxxxxx";
+    const cPassword = "xxxxxxxxxxxxx";
 
     // First check to see if the incoming response json is valid json
     // next, for the received iRequestID or or cControlNumber, do a lookup in your database to see if the order exists
