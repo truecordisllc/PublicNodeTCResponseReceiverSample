@@ -1,0 +1,22 @@
+{
+  "name": "jsonAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "body-parser-xml": "^2.0.3",
+    "compression": "^1.7.3",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "json-parser": "^1.1.5",
+    "mssql": "^4.3.2"
+  }
+}
